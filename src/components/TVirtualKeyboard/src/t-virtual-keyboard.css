@@ -1,0 +1,56 @@
+.t-virtual-keyboard,
+.t-virtual-keyboard::before,
+.t-virtual-keyboard::after,
+.t-virtual-keyboard *,
+.t-virtual-keyboard *::before,
+.t-virtual-keyboard *::after {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.t-virtual-keyboard {
+  --gap: 1rem;
+  --background-color: hsl(220deg 14% 91%);
+
+  display: grid;
+  gap: var(--gap);
+
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  border-radius: 0.4rem;
+
+  background-color: var(--background-color);
+
+  user-select: none;
+}
+
+.t-virtual-keyboard__lang {
+  font-weight: 700;
+}
+
+.t-virtual-keyboard__body {
+  --gap: 0.75rem;
+
+  display: grid;
+  gap: var(--gap);
+}
+
+.t-virtual-keyboard__row {
+  display: flex;
+  gap: var(--gap);
+}
+
+.t-virtual-keyboard__row:last-child {
+  display: grid;
+  grid-template-columns: minmax(min-content, 8rem) minmax(min-content, 6rem) 1fr;
+  gap: var(--gap);
+}
+
+.t-virtual-keyboard__button {
+  flex-grow: 1;
+}

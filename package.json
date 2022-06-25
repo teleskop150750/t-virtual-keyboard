@@ -1,0 +1,71 @@
+{
+  "name": "@teleskop150750/t-virtual-keyboard",
+  "type": "module",
+  "version": "0.0.0-development",
+  "description": "Vue 3",
+  "author": "Валентин Степанов <teleskop15075@gmail.com> (https://github.com/teleskop150750)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build && gulp",
+    "gulp": "gulp",
+    "eslint": "eslint \"**/*.{vue,ts,js}\"",
+    "eslint:fix": "eslint \"**/*.{vue,ts,js}\" --fix",
+    "stylelint": "stylelint \"src/**/*.{vue,css}\"",
+    "stylelint:fix": "stylelint \"src/**/*.{vue,css}\" --fix",
+    "prettier": "prettier . --check --ignore-unknown",
+    "prettier:fix": "prettier . --write",
+    "semantic-release": "semantic-release"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "devDependencies": {
+    "@teleskop150750/eslint-config-vue-prettier": "^0.0.30",
+    "@teleskop150750/prettier-config": "^0.0.29",
+    "@teleskop150750/stylelint-config-vue-prettier": "^0.0.30",
+    "@teleskop150750/tsconfig": "^0.0.29",
+    "@types/rollup-plugin-css-only": "^3.1.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/compiler-sfc": "^3.2.37",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.18.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-prettier": "^4.0.0",
+    "gulp-rename": "^2.0.0",
+    "postcss": "^8.4.14",
+    "postcss-csso": "^6.0.0",
+    "postcss-import": "^14.1.0",
+    "postcss-nested": "^5.0.6",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4",
+    "unplugin-icons": "^0.13.4",
+    "unplugin-vue-define-options": "^0.6.1",
+    "vite": "^2.9.12",
+    "vite-plugin-dts": "^0.9.10",
+    "vue": "^3.2.37",
+    "vue-tsc": "^0.31.4"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/t-virtual-keyboard.umd.js",
+  "module": "./dist/t-virtual-keyboard.es.js",
+  "style": "./dist/style.css",
+  "types": "./dist/src/components/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/t-virtual-keyboard.es.js",
+      "require": "./dist/t-virtual-keyboard.umd.js"
+    },
+    "./styles": "./dist/style.css",
+    "./css/*": "./dist/css/*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teleskop150750/t-virtual-keyboard.git"
+  }
+}

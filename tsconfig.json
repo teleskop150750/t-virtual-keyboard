@@ -1,0 +1,8 @@
+{
+  "extends": "@teleskop150750/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "types": ["vite/client", "unplugin-vue-define-options"]
+  },
+  "exclude": ["dist", "node_modules"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "types/**/*.d.ts", "types/**/*.ts", "vite.config.ts"]
+}
