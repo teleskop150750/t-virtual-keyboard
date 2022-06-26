@@ -56,7 +56,7 @@
   --button-shadow-blur: 1px;
 }
 
-.t-virtual-keyboard-button__indicator--pressed {
+.t-virtual-keyboard-button--pressed {
   background-color: hsl(61deg 94% 55%);
 }
 

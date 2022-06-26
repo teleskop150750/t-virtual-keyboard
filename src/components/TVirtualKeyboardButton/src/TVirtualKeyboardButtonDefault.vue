@@ -61,7 +61,7 @@ const smallLabel = computed(() => {
 const buttonClasses = computed(() => [
   't-virtual-keyboard-button',
   !!props.button.capsLabel && 't-virtual-keyboard-button--fix',
-  keyboard.pressedKeys.value.includes(props.button.code) && 't-virtual-keyboard-button__indicator--pressed',
+  keyboard.pressedKeys.value.includes(props.button.code) && 't-virtual-keyboard-button--pressed',
 ]);
 </script>
 
