@@ -7,6 +7,8 @@ export class ButtonBackspace extends AbstractButton {
     ButtonBackspace.assertIskKeyboard(keyboard);
     ButtonBackspace.assertIskButton(button);
 
+    keyboard.updateText(keyboard.getText().slice(0, -1));
+
     keyboard.setCaps(!keyboard.isCaps);
     keyboard.emitClickButton(button.value);
   };
