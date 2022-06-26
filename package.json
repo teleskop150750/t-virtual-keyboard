@@ -1,7 +1,7 @@
 {
   "name": "@teleskop150750/t-virtual-keyboard",
   "type": "module",
-  "version": "0.0.5-development",
+  "version": "0.0.6-development",
   "description": "Vue 3",
   "author": "Валентин Степанов <teleskop15075@gmail.com> (https://github.com/teleskop150750)",
   "license": "MIT",
